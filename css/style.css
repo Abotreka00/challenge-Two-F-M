@@ -1,0 +1,226 @@
+/* start global */
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+:root {
+    --color-one:   hsl(0, 100%, 67%);
+    --color-two:   hsl(39, 100%, 56%);
+    --color-three: hsl(166, 100%, 37%);
+    --color-four:  hsl(234, 85%, 45%);
+    --color-five:  hsl(252, 100%, 67%);
+    --color-six:   hsl(241, 81%, 54%);
+    --color-seven: hsla(256, 72%, 46%, 1);
+    --color-neighn:hsla(241, 72%, 46%, 0);
+    --color-eight: hsl(0, 0%, 100%);
+    --color-ten:   hsl(221, 100%, 96%);
+    --color-eleven:hsl(241, 100%, 89%);
+    --color-twelve:hsl(224, 30%, 27%);
+    
+}
+
+body {
+    font-family: 'Hanken Grotesk', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--color-eight);
+    min-height: 1300px;
+}
+p {
+    font-size : 18px
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Small */
+@media (min-width: 768px) {
+    .container {
+    width: 750px;
+    }
+}
+  /* Medium */
+@media (min-width: 992px) {
+    .container {
+    width: 970px;
+    }
+}
+  /* Large */
+@media (min-width: 1200px) {
+    .container {
+    width: 1170px;
+    }
+}
+/* end global */
+/* start box */
+.box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: var(--color-eight);
+    box-shadow: 0px 0px 25px #00000024;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    width: 700px;
+    height: 450px;
+}
+.box .result{
+    height: inherit;
+    width: 50%;
+    background-image: linear-gradient(to bottom, hsl(251.09deg 95.83% 62.35%), hsl(241.97deg 80.62% 55.49%));
+    border-radius: inherit;
+    padding: 25px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+.box .result .title{
+    color: var(--color-ten);
+    opacity: .5;
+}
+.box .result .num{
+    width: 50%;
+    height: 40%;
+    border-radius: 50%;
+    background-image: linear-gradient(to bottom, hsl(253.01deg 68.03% 47.84%), hsl(246.26deg 81.98% 56.47%));
+    margin: 5px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.box .result .num .number{
+    color: var(--color-ten);
+    font-size: 45px;
+    margin-bottom: 5px;
+}
+.box .result .num .para{
+    color: var(--color-ten);
+    opacity: .5;
+}
+.box .result .great{
+    color: var(--color-ten);
+    font-size: 25px;
+}
+.box .result p{
+    color: var(--color-ten);
+    opacity: .5;
+    font-weight: normal;
+}
+
+.box .info{
+    width: 50%;
+    height: 100%;
+    padding: 30px;
+}
+.box .info address{
+    font-size: 20px;
+    color: #212736;
+    font-style: normal;
+}
+.box .info ul{
+    margin: 20px 0;
+}
+.box .info ul li{
+    display: flex;
+    align-items: center;justify-content: space-between;
+    margin-bottom: 15px;
+    padding: 15px;
+    border-radius: 6px;
+}
+
+
+.box .info ul li.one{
+    background-color: #fff5f4;
+}
+.box .info ul li.two {
+    background-color: #fffaf1;
+}
+.box .info ul li.three{
+    background-color: #f1faf9;
+}
+.box .info ul li.four{
+    background-color: #f2f2fc;
+}
+
+.box .info ul li p.one {
+    color: #d88d8f;
+}
+.box .info ul li p.two {
+    color: #d8c586;
+}
+.box .info ul li p.three {
+    color: #499789;
+}
+.box .info ul li p.four {
+    color: #2a2b7c;
+}
+.box .info ul li span span.bower {
+    opacity: .5;
+    margin-left: 5px;
+}
+
+.box .info ul li .image {
+    display: flex;
+    align-items: center;
+}
+.box .info ul li span img{
+    margin-right: 10px;
+}
+.box .info .button {
+    width: 100%;
+    background-color: #303a58;
+    border-radius: 30px;
+    padding: 20px;
+    color: var(--color-ten);
+    text-align: center;
+    margin-top: 40px;
+    cursor: pointer;
+
+}
+.box .info .button:hover {
+    background-image: linear-gradient(to bottom, hsl(251.09deg 95.83% 62.35%), hsl(241.97deg 80.62% 55.49%));
+    transition: 1s ;
+}
+@media (max-width: 768px) {
+    .box {
+        top: 550px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 350px;
+        height: 1000px;
+    }
+    .box .result{
+        height: 50%;
+        width: 100%;
+    }
+    .box .info{
+        height: 50%;
+        width: 100%;
+        padding: 30px 30px 0 30px ;
+    }
+}
+/* end box */
